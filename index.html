@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery-ui-effects.custom.min.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+function MM_DW_effectBounce(obj,method,effect,direction,distance,mode,times,speed)
+{
+    obj[method](effect, { direction:direction,distance:distance,mode:mode,times:times}, speed);
+}
+
+function MM_DW_effectHighlight(obj,method,effect,color,speed)
+{
+    obj[method](effect, {color:color}, speed);
+}
+</script>
+</head>
+
+<body style="text-align: center; font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, sans-serif; color: #000000;" onLoad="MM_preloadImages('blue-splash.png','pink-splash.png','green-splat.png')">
+<p style="font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, sans-serif; text-align: justify; font-size: 32px; color: #000000;"><em><strong>Welcome...</strong></em></p>
+<img src="abstract-1781486__180.png" alt="" width="179" height="180" usemap="#Map"/>
+	  <map name="Map">
+ 	  	 <area shape="circle" coords="90,89,90" href="blobultrathink.png">
+</map>
+	<br><a href="pink-splash.png" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image2','','blue-splash.png',1)"><img src="black-splash.png" alt="" width="100" height="86" id="Image2"></a> 
+		&nbsp; &nbsp; &nbsp; 
+	<a href="black-splash.png" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image3','','pink-splash.png',1)"><img src="yellow-splash.png" alt="" width="100" height="86" id="Image3"></a>
+	<br>
+	<p><span style="text-align: center; color: #FF0004; font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, sans-serif; font-size: 18px;"><em><strong>things are not what they seem.... interact with all the objects</strong></em></span><br><br>
+	<img src="abstract-1781486__180.png" alt="" width="96" height="98" id="Image1" onClick="MM_DW_effectHighlight($(this),'hide','highlight','#00FL07',1000)" onMouseOver="MM_swapImage('Image1','','green-splat.png',1)" onMouseOut="MM_swapImgRestore()"/>          
+	<br>
+		<img src="abstract-1781486__180.png" alt="" width="179" height="180" onClick="MM_DW_effectBounce($(this),'effect','bounce:center','up',20,'hide',5,1000)">
+		<img src="abstract-1781486__180.png" alt="" width="179" height="180" onClick="MM_DW_effectBounce($(this),'effect','bounce:center','down',20,'hide',5,1000)"></p>
+	
+<p><em>
+  <light style="font-size: 10px; color: orange; font-weight: bolder;">o.O0o.O.o0O.o</light>
+</em></p>
+	<span style="text-align: right; font-size: 24px;"><p><strong><em>...Hope to see you again soon</em></strong></p></span>
+
+</body></html>
